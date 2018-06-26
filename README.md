@@ -6,4 +6,4 @@ I wrote this in JavaScript using the [RamdaJS](https://ramdajs.com/) for no othe
 
 To run:
 
-`node --experimental-modules main.mjs`
+`node main.js`

@@ -1,4 +1,4 @@
-import R from 'ramda'
+const R = require('ramda')
 
 const log = R.curry(console.log)
 const flippedConcat = R.flip(R.concat)
