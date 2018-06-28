@@ -3,7 +3,8 @@ const R = require('ramda')
 const log = R.curry(console.log)
 const flippedConcat = R.flip(R.concat)
 const bottlesRef = R.cond([
-	[R.equals(1), R.always("1 bottle")],
+  [R.equals(1), R.always("1 bottle")],
+  [R.equals(6), R.always("A 6 pack")],
   [R.equals(0), R.always("No more bottles")],
   [R.T, R.compose(flippedConcat(" bottles"), R.toString)]
 ])
